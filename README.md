@@ -61,7 +61,7 @@ Data Analitics
    -  Publish articles to Humic social media
    -  Analyzing Lookerstudio Analytics Website
 
-#### 7. [GRIT Creativepreneur] | Entrepreneur Assistant Laboratory Intern | Bandung `Agt' 2024 - Jan` 2025
+#### 7. [GRIT Creativepreneur](https://telkomuniversity.ac.id/) | Entrepreneur Assistant Laboratory Intern | Bandung `Agt' 2024 - Jan` 2025
    -   Creating and developing content materials for entrepreneurship programs and training
    -   Managing social media platforms and other communication channels to promote the programs and content created
    -   Community Exchange Culture University Malaysia
