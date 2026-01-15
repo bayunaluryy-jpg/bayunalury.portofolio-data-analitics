@@ -1,0 +1,83 @@
+SCRAPPING DATA 
+!pip install google-play-scraper
+
+MENGHITUNG JUMLAH ULASAN
+from google_play_scraper import reviews, Sort
+
+# Package JobStreet
+app_id = 'com.jobstreet.jobstreet'
+
+def get_reviews(app_id, lang='id', count=10000, sort=Sort.NEWEST,
+                filter_score_with=None, filter_device_with=None, continuation_token=None):
+    try:
+        result, continuation_token = reviews(
+            app_id,
+            lang=lang,
+            country='id',
+            sort=sort,
+            count=count,
+            filter_score_with=filter_score_with,
+            filter_device_with=filter_device_with,
+            continuation_token=continuation_token
+        )
+
+        return result, continuation_token
+
+    except Exception as e:
+        print("Error:", e)
+        return None, None
+
+# Ambil review
+reviews_data, continuation_token = get_reviews(app_id)
+
+# Output
+if reviews_data is not None:
+    print("Jumlah ulasan:", len(reviews_data))
+    if len(reviews_data) > 0:
+        print("Contoh ulasan:")
+        print(reviews_data[0])
+else:
+    print("Tidak dapat mengambil ulasan.")
+
+MENYIMPAN HASIL SCRAPPING KE DALAM EXCEL
+import csv
+
+def simpan_ulasan_ke_csv(data_ulasan, nama_file="ulasan_jobstreet.csv"):
+    if not data_ulasan:
+        print("Tidak ada ulasan yang bisa disimpan.")
+        return
+
+    kolom = ["Review ID", "Username", "Rating", "Review Text", "Date"]
+
+    try:
+        with open(nama_file, "w", encoding="utf-8", newline="") as berkas:
+            tulis = csv.writer(berkas)
+            tulis.writerow(kolom)
+
+            for item in data_ulasan:
+                baris = [
+                    item.get("reviewId"),
+                    item.get("userName"),
+                    item.get("score"),
+                    item.get("content"),
+                    item.get("at")
+                ]
+                tulis.writerow(baris)
+
+        print(f"File berhasil dibuat: {nama_file}")
+
+    except Exception as e:
+        print("Gagal menyimpan data:", e)
+
+# Simpan hasil scraping
+simpan_ulasan_ke_csv(reviews_data)
+
+MENAMPILKAN DATA 
+import pandas as pd
+
+# Membaca file hasil scraper JobStreet
+df = pd.read_csv("ulasan_jobstreet.csv", encoding="utf-8")
+
+# Menampilkan tabel
+df
+
