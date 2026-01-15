@@ -66,7 +66,7 @@ Data Analitics
    -   Managing social media platforms and other communication channels to promote the programs and content created
    -   Community Exchange Culture University Malaysia
 
-#### 8. [Telkom University] | Statistics Business Lecturer Assistant | Bandung `Oct' 2023 - Des` 2023
+#### 8. [Telkom University] (https://telkomuniversity.ac.id/) | Statistics Business Lecturer Assistant | Bandung `Oct' 2023 - Des` 2023
    - Assisting in the preparation of data for analysis, including data cleaning and formatting
    - Conducting statistical analyses using software such as R and SPSS
    - Assisting in the interpretation and presentation of statistical results
