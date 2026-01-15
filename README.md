@@ -7,7 +7,7 @@ Data Analitics
 - 👯 I’m looking to collaborate as Data Analyst, Data Science (Big Data), and Business Analyst
 - 🤔 I’m looking for suggest for Rust Project Ideas
 - 💬  Ask me about anything
-- 📫 Ask me about anything, How to reach me: bayunaluryy@gmail.com
+- 📫 Ask me about anything, How to reach me: bayunaluryy@gmail.com 
 
 ## Education:
 
