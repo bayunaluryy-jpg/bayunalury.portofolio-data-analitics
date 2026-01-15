@@ -11,7 +11,7 @@ Data Analitics
 
 ## Education:
 
-#### 1. [Telkom University](https://www.ugm.ac.id) | Bachelor of Management Business Telecommunication and Informatics | Bandung `2022 - 2026`
+#### 1. [Telkom University](https://telkomuniversity.ac.id/) | Bachelor of Management Business Telecommunication and Informatics | Bandung `2022 - 2026`
    - Information and Communication Technology (ICT) Expertise Group
    - Delegate Outstanding Student Faculty Economic and Business
    - Certified Public Speaking BNSP
